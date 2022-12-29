@@ -7,6 +7,18 @@ use Illuminate\Contracts\Support\Arrayable;
 class Position implements Arrayable
 {
     /**
+     * To detect whether the ip is from a VPN.
+     * 
+     */
+    public $isProxy;
+
+    /**
+     * To detect whether the ip is from a hosted server.
+     *
+     */
+    public $isHosting;
+    
+    /**
      * The IP address used to retrieve the location.
      *
      * @var string
